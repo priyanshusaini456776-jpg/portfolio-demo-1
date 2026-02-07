@@ -2,68 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bright Future Coaching Centre</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Future Coaching</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h2 class="logo">Bright Future Coaching</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#courses">Courses</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Bright Future Coaching</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
 
-<section id="home" class="hero">
-  <h1>Build Your Career With Expert Guidance</h1>
-  <p>Professional coaching for school & competitive exams.</p>
-  <a href="#courses" class="btn">Explore Courses</a>
-</section>
-
-<section id="courses" class="courses">
-  <h2>Our Courses</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Class 9-10</h3>
-      <p>Complete foundation preparation</p>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Bright Future Coaching</h1>
+      <p>Expert Guidance for Every Student</p>
+      <p class="typing"></p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Enroll Now</a>
+        <a href="#courses" class="btn btn-secondary">View Courses</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>Class 11-12</h3>
-      <p>Science & Commerce streams</p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses-container">
+      <div class="course-card">
+        <h3>Class 9–10</h3>
+        <p>All subjects covered with weekly tests and notes. Duration: 3 months. Fee: ₹2000</p>
+        <a href="#contact" class="btn">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <h3>Class 11–12</h3>
+        <p>Advanced coaching for Science & Commerce. Duration: 4 months. Fee: ₹3000</p>
+        <a href="#contact" class="btn">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <h3>Competitive Exams</h3>
+        <p>Focused coaching for JEE/NEET/Other exams. Duration: 6 months. Fee: ₹5000</p>
+        <a href="#contact" class="btn">Enroll Now</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>Competitive Exams</h3>
-      <p>SSC, Banking, Entrance Exams</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Bright Future Coaching has been guiding students to success for over 5 years. Our experienced faculty ensures personalized attention and consistent growth.</p>
+    <div class="stats">
+      <div class="stat">
+        <h3>500+</h3>
+        <p>Students Taught</p>
+      </div>
+      <div class="stat">
+        <h3>95%</h3>
+        <p>Exam Success Rate</p>
+      </div>
+      <div class="stat">
+        <h3>10+</h3>
+        <p>Experienced Faculty</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="about">
-  <h2>About Us</h2>
-  <p>
-    We provide high-quality education with experienced teachers,
-    regular tests, and personal guidance to help students achieve success.
-  </p>
-</section>
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"This coaching helped me score 90% in my exams! Highly recommended."</p>
+        <h4>- Rohan Kumar</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Excellent faculty and guidance. My son improved drastically in 3 months."</p>
+        <h4>- Priya Sharma</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The notes and weekly tests were very helpful. Very professional coaching."</p>
+        <h4>- Ankit Verma</h4>
+      </div>
+    </div>
+  </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <form onsubmit="sendMessage(event)">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us / Enroll</h2>
+    <div class="contact-container">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Phone / WhatsApp" required>
+        <textarea placeholder="Message / Course Interest" required></textarea>
+        <button type="submit" class="btn">Enroll Today!</button>
+      </form>
+      <div class="contact-info">
+        <p>📞 Phone: +91-XXXXXXXXXX</p>
+        <p>📧 Email: info@brightfuture.com</p>
+        <p>📍 Address: Your City, India</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Bright Future Coaching | Created by Priyanshu</p>
-</footer>
+  <footer>
+    <p>&copy; 2026 Bright Future Coaching. All rights reserved.</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
