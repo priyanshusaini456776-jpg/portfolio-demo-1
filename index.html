@@ -1,181 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-
-<html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Coaching Center website demo</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <title>Gym Website | Transform Your Body</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-
-    <div class="container">
-
-        <h1> Bright future Coaching Center</h1>
-
-        <nav>
-
-            <ul>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#courses">Courses</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
+  <h2 class="logo">POWER GYM</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section id="about">
-
-    <div class="container">
-
-        <h2>About Us</h2>
-
-        <p>
-
-            Welcome to our Coaching Center, where we provide personalized coaching
-
-            to help you achieve your goals. Our experienced instructors offer a
-
-            variety of courses designed to build skills and confidence.
-
-        </p>
-
-    </div>
-
+<section id="home" class="hero">
+  <h1>Transform Your Body. Transform Your Life.</h1>
+  <p>Join the most powerful fitness community today.</p>
+  <a href="#pricing" class="btn">Join Now</a>
 </section>
 
-<section id="courses">
+<section id="pricing" class="pricing">
+  <h2>Our Plans</h2>
+  <div class="cards">
 
-    <div class="container">
-
-        <h2>Our Courses</h2>
-      <p>Customized courses available for schools & individuals.</p>
-
-        <div class="courses-grid">
-
-            <div class="course">
-
-                <h3>Mathematics</h3>
-
-                <p>Master algebra, geometry, and calculus.</p>
-
-            </div>
-
-            <div class="course">
-
-                <h3>Science</h3>
-
-                <p>Learn physics, chemistry, and biology.</p>
-
-            </div>
-
-            <div class="course">
-
-                <h3>English</h3>
-
-                <p>Improve reading, writing, and speaking skills.</p>
-
-            </div>
-
-            <div class="course">
-
-                <h3>Computer Science</h3>
-
-                <p>Programming, web development, and basics.</p>
-
-            </div>
-
-        </div>
-
+    <div class="card">
+      <h3>Basic</h3>
+      <p>$19/month</p>
+      <p>Gym Access</p>
+      <button>Choose Plan</button>
     </div>
 
+    <div class="card popular">
+      <h3>Premium</h3>
+      <p>$49/month</p>
+      <p>Gym + Personal Trainer</p>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="card">
+      <h3>Pro</h3>
+      <p>$79/month</p>
+      <p>All Features Included</p>
+      <button>Choose Plan</button>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact">
+<section id="trainers" class="trainers">
+  <h2>Our Trainers</h2>
+  <div class="trainer-cards">
 
-    <div class="container">
-
-        <h2>Contact Us</h2>
-
-        <form onsubmit="submitForm(event)">
-
-            <div>
-
-                <label>Name</label>
-
-                <input type="text" required>
-
-            </div>
-
-            <div>
-
-                <label>Email</label>
-
-                <input type="email" required>
-
-            </div>
-
-            <div>
-
-                <label>Message</label>
-
-                <textarea rows="5" required></textarea>
-
-            </div>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
+    <div class="trainer">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <h3>John Smith</h3>
+      <p>Strength Coach</p>
     </div>
 
+    <div class="trainer">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <h3>Emma Wilson</h3>
+      <p>Fitness Trainer</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
-
-    <div class="container">
-
-        <p>&copy; 2026 Coaching Center. All rights reserved.</p>
-      <p>Demo Website | Designed for Fiverr Portfolio</p>
-
-    </div>
-
+  <p>© 2026 Power Gym | Created by Priyanshu</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
-
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
-</html>
+      </html>
